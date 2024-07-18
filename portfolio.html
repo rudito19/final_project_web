@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Web Konsultan</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+.content-portfolio .card {
+        margin-bottom: 20px;
+      }
+      .column-filter {
+        display: none; 
+      }
+      .column-filter.show {
+        display: block; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" class="logo-top" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="todo.html">TODO</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">TODO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>    
+
+      <hr class="hr-text">
+      <div class="row featurette">
+        <!-- content here for portfolio -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('web')"> Web Development</button>
+          <button class="btn" onclick="filterSelection('mobile')">Mobile Apps</button>
+          <button class="btn" onclick="filterSelection('ui')">UI/UX</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="col-md-2 content-portfolio column-filter web">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/web1.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">WEB</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 content-portfolio column-filter web">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/web2.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">WEB</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 content-portfolio column-filter web">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/web3.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">WEB</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-2 content-portfolio column-filter web">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/web4.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">WEB</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 content-portfolio column-filter mobile">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/mobile1.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">Mobile Apps</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 content-portfolio column-filter mobile">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/mobile2.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">Mobile Apps</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 content-portfolio column-filter mobile">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/mobile3.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">Mobile Apps</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 content-portfolio column-filter mobile">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/mobile4.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">Mobile Apps</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 content-portfolio column-filter ui">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/ui1.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 content-portfolio column-filter ui">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/ui2.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 content-portfolio column-filter ui">
+            <div class="content">
+              <div class="card">
+                <img src="assets/images/ui3.jpg" alt="web" class="card-img-top"
+                  alt="image1" />
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+
+
+      </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="margin-top: 5rem;">
+          <div class="footer-middle row">
+            <div class="col-md-5">
+                <h5 class="title-sub-footer">About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title-sub-footer">Social Connecting</h5>
+                <ul class="list-unstyled">
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                       </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-youtube"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-google-plus"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="title-sub-footer">Contact info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Phone: +1 800 258 2689</li>
+                    <li><i class="fa fa-telegram"></i> Email: info(at)skokov.com</li>
+                </ul>
+                <h5 class="title-sub-footer">Follow Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row">
+         <div class="col-6">
+           <p>&copy; 2024 RUDITOPRA, Inc. &middot;</p>
+         </div>
+         <div class="col-6">
+           <div class="float-end bottom-nav">
+             <ul>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">CONTACT</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">TODO</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+        </div>
+       </footer>
+
+       <script src="portfolio.js"></script>
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>  
+  </body>
+</html>

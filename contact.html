@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Web Konsultan</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+ <style>
+
+.contact-section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+.contact-form-container{
+  width:80%;
+  margin: auto;
+}
+
+ </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" class="logo-top" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">TODO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>    
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <!-- content here for contact -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.221897324609!2d-80.13907212499999!3d26.275213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8efc645c64055%3A0xada8a8a80e0a0f9d!2sLighthouse%20Point%2C%20FL%2033005%2C%20USA!5e0!3m2!1sen!2sid!4v1628335729156!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="contact-form-container">
+          <h3>SEND US A MESSAGE</h3>
+          <form>
+              <div class="form-group">
+                  <input type="text" name="name" placeholder="Name..." required>
+                  <input type="email" name="email" placeholder="Email..." required>
+                  <input type="text" name="subject" placeholder="Subject..." required>
+              </div>
+              <div class="form-group">
+                  <textarea name="message" placeholder="Message..." required></textarea>
+              </div>
+              <button type="submit">Send a Message</button>
+          </form>
+
+      </div>
+      </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="margin-top: 5rem;">
+          <div class="footer-middle row">
+            <div class="col-md-5">
+                <h5 class="title-sub-footer">About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title-sub-footer">Social Connecting</h5>
+                <ul class="list-unstyled">
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                       </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-youtube"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-google-plus"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="title-sub-footer">Contact info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Phone: +1 800 258 2689</li>
+                    <li><i class="fa fa-telegram"></i> Email: info(at)skokov.com</li>
+                </ul>
+                <h5 class="title-sub-footer">Follow Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row">
+         <div class="col-6">
+           <p>&copy; 2024 RUDITOPRA, Inc. &middot;</p>
+         </div>
+         <div class="col-6">
+           <div class="float-end bottom-nav">
+             <ul>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">CONTACT</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">TODO</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+        </div>
+       </footer>
+
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>

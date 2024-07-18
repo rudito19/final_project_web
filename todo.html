@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Web Konsultan</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" class="logo-top" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="todo.html">TODO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>    
+
+      <div class="row featurette">
+        <!-- content here for todo -->
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                    <div class="card-body py-4 px-4 px-md-5">
+
+                        <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                            Type Your Sugestion
+                        </p>
+
+                        <div class="card pb-2">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <input type="text" class="form-control form-control-lg" id="add-todo" placeholder="Add new suggest">
+                                    <button type="button" class="btn btn-primary" onclick="submitTodo()" style="margin-left: 10px;">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div id="list-todo">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="margin-top: 5rem;">
+          <div class="footer-middle row">
+            <div class="col-md-5">
+                <h5 class="title-sub-footer">About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title-sub-footer">Social Connecting</h5>
+                <ul class="list-unstyled">
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                       </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-youtube"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-google-plus"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="title-sub-footer">Contact info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Phone: +1 800 258 2689</li>
+                    <li><i class="fa fa-telegram"></i> Email: info(at)skokov.com</li>
+                </ul>
+                <h5 class="title-sub-footer">Follow Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row">
+         <div class="col-6">
+           <p>&copy; 2024 RUDITOPRA, Inc. &middot;</p>
+         </div>
+         <div class="col-6">
+           <div class="float-end bottom-nav">
+             <ul>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">CONTACT</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">TODO</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+        </div>
+       </footer>
+
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>

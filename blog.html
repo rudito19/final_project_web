@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Web Konsultan</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+      .content-blog .card {
+              margin-bottom: 20px;
+            }
+            .content-blog .card-body{
+              background-color: #dceaf0;
+            }
+            .categories-list,.archive-list {
+    list-style: none;
+    padding: 0;
+}
+.content-archive,.content-popular,.content-tags{
+  margin-top: 10px;;
+}
+.categories-list li,.archive-list li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.categories-list li::before,.archive-list li::before {
+    
+    color: #ffeb3b;
+    margin-right: 10px;
+}
+.content-categories,.content-archive,.content-popular,.content-tags{
+  background-color: #16153d;
+  border-radius: 5px;
+}
+.content-categories li i,.content-archive li i{
+  background-color: #f4eeee;
+    padding: 5px;
+    color: #655ef0;
+    margin: 5px;
+}
+.content-categories li:hover,.content-archive li:hover{
+  color:#655ef0;
+}
+.popular-posts-section .post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popular-posts-section .post img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.popular-posts-section .post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-posts-section .post-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.popular-posts-section .post-info span {
+    color: #ffeb3b;
+    font-size: 12px;
+}
+
+.popular-posts-section .heart {
+    margin-left: 5px;
+}
+.content-popular img{
+  width:100px
+}
+.content-tags ul li {
+    display: inline-block;
+    background-color: #eef0f2;
+    padding: 2px;
+}
+.content-tags .nav-link:focus, .content-tags .nav-link:hover {
+    color: black;
+    background-color: white;
+}
+          </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" class="logo-top" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">TODO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>    
+      <hr class="hr-text">
+      <div class="row featurette">
+        <!-- content here for blog -->
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 content content-blog">
+                <div class="row">
+                  <div class="col-md-12 content content-blog">
+                    <div class="card">
+                      <img src="assets/images/blog1.jpg" alt="web" class="card-img-top"
+                        alt="image1" />
+                      <div class="card-body">
+                        <h5 class="card-title">What is Lorem Ipsum?</h5>
+                        <p class="card-text">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 content content-blog">
+                    <div class="card">
+                      <img src="assets/images/img1.jpg" alt="web" class="card-img-top"
+                        alt="image1" />
+                      <div class="card-body">
+                        <h5 class="card-title">Where does it come from?</h5>
+                        <p class="card-text">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 content content-blog">
+                <div class="row">
+                  <div class="col-md-12 content content-blog">
+                    <div class="card">
+                      <img src="assets/images/blog2.jpg" alt="web" class="card-img-top"
+                        alt="image1" />
+                      <div class="card-body">
+                        <h5 class="card-title">Where can I get some?</h5>
+                        <p class="card-text">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 content content-blog">
+                    <div class="card">
+                      <img src="assets/images/blog3.jpg" alt="web" class="card-img-top"
+                        alt="image1" />
+                      <div class="card-body">
+                        <h5 class="card-title">Why do we use it?</h5>
+                        <p class="card-text">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="row">
+              <div class="search-bar mb-4">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-categories">
+                <h4>Categories</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                      <ul class="categories-list">
+                          <li><i class="fa fa-chevron-right"></i>Web Apps</li>
+                          <li><i class="fa fa-chevron-right"></i>Mobile Apps</li>
+                          <li><i class="fa fa-chevron-right"></i>Dekstop Apps</li>
+                          <li><i class="fa fa-chevron-right"></i>Front End</li>
+                          <li><i class="fa fa-chevron-right"></i>Back End</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="categories-list">
+                        <li><i class="fa fa-chevron-right"></i>Dark Mode</li>
+                        <li><i class="fa fa-chevron-right"></i>Light Mode</li>
+                        <li><i class="fa fa-chevron-right"></i>Warm Up</li>
+                        <li><i class="fa fa-chevron-right"></i>User Interface</li>
+                        <li><i class="fa fa-chevron-right"></i>Software Engineer</li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-archive">
+                <h4>Archive</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                      <ul class="archive-list">
+                          <li><i class="fa fa-chevron-right"></i>January(5)</li>
+                          <li><i class="fa fa-chevron-right"></i>February(3)</li>
+                          <li><i class="fa fa-chevron-right"></i>March(10)</li>
+                          <li><i class="fa fa-chevron-right"></i>April(5)</li>
+                          <li><i class="fa fa-chevron-right"></i>Juni(10)</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="archive-list">
+                        <li><i class="fa fa-chevron-right"></i>July(7)</li>
+                        <li><i class="fa fa-chevron-right"></i>August(4)</li>
+                        <li><i class="fa fa-chevron-right"></i>September(8)</li>
+                        <li><i class="fa fa-chevron-right"></i>October(1)</li>
+                        <li><i class="fa fa-chevron-right"></i>November(8)</li>
+                      </ul>
+                  </div>
+              </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-popular">
+                <h4>Popular Posts</h4>
+            <div class="row mt-4 mb-4">
+              <div class="col-md-4">
+                <img src="assets/images/img1.jpg" alt="Post 2">
+              </div>
+              <div class="col-md-8">
+                <div class="post-info">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p style="text-align: right;">Jan 20, 2024</p>
+              </div>
+
+              </div>
+            </div>
+            <div class="row mt-4 mb-4">
+              <div class="col-md-4">
+                <img src="assets/images/img2.jpg" alt="Post 2">
+              </div>
+              <div class="col-md-8">
+                <div class="post-info">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p style="text-align: right;">Jan 20, 2024</p>
+              </div>
+
+              </div>
+            </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-tags">
+                <p>Tag</p>
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Back End</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Front End</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">UI/UX</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Database</a>
+                  </li>
+                  
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="margin-top: 5rem;">
+          <div class="footer-middle row">
+            <div class="col-md-5">
+                <h5 class="title-sub-footer">About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title-sub-footer">Social Connecting</h5>
+                <ul class="list-unstyled">
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                       </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-youtube"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-google-plus"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="title-sub-footer">Contact info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Phone: +1 800 258 2689</li>
+                    <li><i class="fa fa-telegram"></i> Email: info(at)skokov.com</li>
+                </ul>
+                <h5 class="title-sub-footer">Follow Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row">
+         <div class="col-6">
+           <p>&copy; 2024 RUDITOPRA, Inc. &middot;</p>
+         </div>
+         <div class="col-6">
+           <div class="float-end bottom-nav">
+             <ul>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">CONTACT</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">TODO</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+        </div>
+       </footer>
+
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>

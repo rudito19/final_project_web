@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Web Konsultan</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+      .content-team img{
+        width: 30%;
+      }
+      .content-team {
+        margin-top: 60px !important;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+}
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.content-skill {
+    margin-top: 30px;
+}
+
+.content-skill h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    flex: 1;
+    background-color: #ccc;
+    height: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.filled-bar {
+    height: 100%;
+    background-color: #ff0;
+}
+.content-about{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content-skill,.content-people-team{
+  width: 80%;
+  margin:auto;
+}
+  
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" class="logo-top" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">TODO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>    
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <!-- content here for about us -->
+        <div class="content-about container">
+          <div class="content-team">
+              <img src="assets/images/team.jpg" alt="Team Image">
+              <div class="text-content">
+                  <h2>WELCOME TO OUR TEAM</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                  </div>
+                 
+                  
+                 
+              </div>
+          </div>
+          <hr class="hr-text" data-content="OUR SKILL">
+          <div class="content-skill">
+            <div class="skill">
+                <span>90%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 90%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <span>87%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 87%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <span>70%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 70%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <span>75%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 75%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="skill">
+                <span>80%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 80%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <span>76%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 76%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <span>65%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 65%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="skill">
+                <span>85%</span>
+                <div class="skill-bar">
+                    <div class="filled-bar" style="width: 85%;">
+                      <span>Html/css</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       
+      </div>
+      <hr class="hr-text" data-content="OUR TEAM">
+      <div class="content-people-team row">
+        <div class="col-4">
+          <img src="assets/images/boy.png" alt="Avatar" style="width:150px">
+          <p style="margin-left: 15px;">Web Developer</p>
+        </div>
+        <div class="col-4">
+          <img src="assets/images/boy.png" alt="Avatar" style="width:150px">
+          <p style="margin-left: 15px;">Web Developer</p>
+        </div>
+        <div class="col-4">
+          <img src="assets/images/boy.png" alt="Avatar" style="width:150px">
+          <p style="margin-left: 15px;">Web Developer</p>
+        </div>
+      </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="margin-top: 5rem;">
+          <div class="footer-middle row">
+            <div class="col-md-5">
+                <h5 class="title-sub-footer">About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title-sub-footer">Social Connecting</h5>
+                <ul class="list-unstyled">
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                       </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-facebook"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-youtube"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-google-plus"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-1 icon-medsos">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                      <div class="col-6 icon-medsos">
+                        <span class="text-primary">RuditoPra</span>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="title-sub-footer">Contact info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone-square"></i> Phone: +1 800 258 2689</li>
+                    <li><i class="fa fa-telegram"></i> Email: info(at)skokov.com</li>
+                </ul>
+                <h5 class="title-sub-footer">Follow Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
+            </div>
+            
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+      <!-- FOOTER -->
+      <footer class="container">
+        <div class="row">
+         <div class="col-6">
+           <p>&copy; 2024 RUDITOPRA, Inc. &middot;</p>
+         </div>
+         <div class="col-6">
+           <div class="float-end bottom-nav">
+             <ul>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">BLOG</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">CONTACT</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">TODO</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+        </div>
+       </footer>
+
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
